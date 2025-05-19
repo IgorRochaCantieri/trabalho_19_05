@@ -3,36 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Principal</title>
+  <title>HTML e CSS</title>
   <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #0f172a, #000);
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .capa {
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .titulo {
+      font-size: 36px;
+      color: #60a5fa; /* Azul claro */
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      font-size: 20px;
+      color: #e0e0e0;
+      margin-bottom: 40px;
+    }
+
+    .voltar {
+      margin-top: 20px;
+    }
+
+    .voltar a {
+      color: #60a5fa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .voltar a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Igor Rocha Cantieri</h1>
-      <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
-    </header>
-
-    <section class="perfil">
-      <img src="curriculo.png" alt="Foto de perfil">
-      <div class="info">
-        <p><strong>Idade:</strong> 27 anos</p>
-        <p><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</p>
-        <p><strong>Sobre mim:</strong> Sou um estudante dedicado e apaixonado por tecnologia, com interesse em desenvolvimento web e Programação orientada à objetos.</p>
-      </div>
-    </section>
-
-    <section class="link">
-      <a href="pagina2.html">Ir para página secundária</a>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Igor Rocha Cantieri</p>
-      <p>
-        <a href="https://www.instagram.com/igorcantieri7">instagram</a>
-        <a href="">   GitHub</a>
-      </p>
-    </footer>
-  </main>
+  <div class="capa">
+    <h1 class="titulo">HTML e CSS:</h1>
+    <p class="subtitulo">Classes, posicionamento e Flexbox</p>
+    <div class="voltar">
+      <a href="pagina2.html">Ir para a página do aluno</a>
+    </div>
+  </div>
 </body>
 </html>

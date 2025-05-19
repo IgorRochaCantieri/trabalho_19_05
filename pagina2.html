@@ -3,36 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Secundária</title>
-  <link rel="stylesheet" href="estilo.css">
+  <title>Página do Aluno</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #111;
+      border-radius: 12px;
+      max-width: 900px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+      gap: 40px;
+    }
+
+    .texto {
+      flex: 1;
+    }
+
+    .texto h1 {
+      font-size: 28px;
+      color: #00e5ff;
+    }
+
+    .texto p {
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .botoes {
+      margin-top: 30px;
+    }
+
+    .botoes a {
+      background-color: #00bcd4;
+      color: black;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .botoes a:hover {
+      background-color: #0097a7;
+    }
+
+    .foto {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .foto img {
+      max-width: 100%;
+      border-radius: 12px;
+      border: 2px solid #00e5ff;
+    }
+  </style>
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Mais sobre Igor Cantieri</h1>
-    </header>
-
-    <section class="secao">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML, CSS e JavaScript</li>
-        <li>MySQL, C, POO</li>
-        <li>Git e GitHub</li>
-      </ul>
-    </section>
-
-    <section class="secao">
-      <h2>Projetos</h2>
-      <p>Fiz um ótimo trabalho de POO relacionado ao controle de acesso de uma escola.</p>
-    </section>
-
-    <section class="link">
-      <a href="index.html">Voltar para página principal</a>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Igor Rocha Cantieri</p>
-    </footer>
-  </main>
+  <div class="container">
+    <div class="texto">
+      <h1>Eleve seu negócio digital a outro nível com um <strong>Front-end de qualidade!</strong></h1>
+      <p>Olá! Sou Igor Rocha Cantieri, Aluno de Análise e desenvolvimento de sistemas e amo HTML e CSS. Vamos conversar?</p>
+      <div class="botoes">
+        <a href="https://www.instagram.com/igorcantieri7" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://github.com/IgorRochaCantieri" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="foto">
+      <img src="curriculo.png" alt="Foto do aluno">
+    </div>
+  </div>
 </body>
 </html>
